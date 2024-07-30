@@ -2,7 +2,7 @@ import os
 import re
 
 class TexCombiner:
-    def __init__(self, resume_type='back', base_dir=None):
+    def __init__(self, resume_type='fs', base_dir=None):
         self.RESUME_TYPE = resume_type
         self.base_dir = base_dir or os.path.join(os.path.dirname(os.path.abspath(__file__)), "latex_project")
 
@@ -110,7 +110,7 @@ class TexCombiner:
         main_file_path = os.path.join(self.base_dir, 'main_processed.tex')  # Path to your main LaTeX file
         combined_content = self.replace_input(main_file_path)
 
-        with open(os.path.join(self.base_dir, 'combined_main.tex'), 'w') as output_file:
+        with open(os.path.join(self.base_dir, f'combined_main_{self.RESUME_TYPE}.tex'), 'w') as output_file:
             output_file.write(combined_content)
 
     def run_pipeline(self):
