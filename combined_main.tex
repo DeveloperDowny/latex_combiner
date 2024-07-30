@@ -1,0 +1,487 @@
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym} 
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+\usepackage{xstring}
+\usepackage{etoolbox}
+
+
+\renewcommand{\enspace}{\hspace{0.5em}}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} #5 & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadings}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} #5 & \textit{#2}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\achieveSubheading}[1]{
+ \item \textbf{#1}  
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\setlength{\tabcolsep}{12pt}
+
+
+\newcommand{\customFormat}[2]{\textbf{#1:} #2}
+
+\newcommand{\achievement}[2]{
+    \subsection*{#1}
+    #2
+}
+\newcommand{\githublink}[1]{\href{#1}{\faGithub}}
+\newcommand{\websitelink}[1]{\href{#1}{\faGlobe}}
+
+\usepackage{tfrupee}
+\usepackage[T1]{fontenc}
+
+\newcommand{\resumeType}{app} % Options: fs, back, front, sde, fs_front
+
+\begin{document}
+
+\begin{center}
+     \huge \textsc{Vedant Panchal}
+\end{center}
+
+\begin{center}
+\begin{tabular}{ c c c c } 
+ \href{https://linkedin.com/in/vedantpanchal}{\faLinkedin\enspace{vedantpanchal}} & \faEnvelopeO\enspace \href{mailto:vedant.panchal@spit.ac.in}{vedant.panchal@spit.ac.in} &  \href{https://github.com/DeveloperDowny}{\faGithub\enspace{DeveloperDowny}} &  \faGlobe\enspace \href{https://developerdowny.github.io/}{DeveloperDowny.github.io}
+\end{tabular}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Mumbai - Sardar Patel Institute of Technology}{Mumbai, India}
+      {Bachelor of Technology in Computer Engineering (CGPA: 8.71/10)}{Dec 2021 -- June 2025 (Exp.)}{}
+  \resumeSubHeadingListEnd
+
+
+        \section{Programming Skills % Default case
+
+
+
+\section{Achievements}
+\begin{itemize}
+    \item \textbf{Kavach 2023 Hackathon Winner}  \hfill \textit{Aug 2023} \\ 
+    \textbf{Led a team of 6} to first place victory in the \textbf{National Level Hackathon}, showcasing \textbf{exceptional leadership} and \textbf{team management skills}
+    \item \textbf{Code For Good 2023 Hackathon Winner}\hfill \textit{Aug 2023} \\  
+    Developed an award-winning \textbf{Computer Vision-based educational game}, along with a \textbf{game website}
+    
+    % demonstrating creativity in front-end development and UI/UX design.
+\end{itemize} 
+
+\section{Positions of Responsibility}
+\begin{itemize}
+
+    \item \textbf{Technical Head, Oculus}\hfill \textit{Nov 2023 - Apr 2024} \\  
+    \textbf{Led and mentored} mobile and web development teams of 4 people each, demonstrating \textbf{strong leadership} and \textbf{communication skills}
+    
+    \item \textbf{Technical Team, CSI SPIT}  \hfill \textit{Sep 2022 - May 2023} \\ 
+    \textbf{Organized} hackathons and competitions and \textbf{taught  data structures and algorithms}, and \textbf{Git and GitHub} through technical workshops, exhibiting \textbf{strong public speaking} and \textbf{teaching abilities}
+    
+    % demonstrating creativity in front-end development and UI/UX design.
+\end{itemize} 
+
+
+% to view all options
+% 
+\section{Programming Skills}
+\begin{tabular}{ll}
+    \customFormat{Languages}{Python, JavaScript (Node.js), Java} & \customFormat{Databases}{MySQL, MongoDB, PostgreSQL, Redis} \\ 
+    \customFormat{Backend Frameworks}{Express.js, Django, Flask} & \customFormat{API Development}{RESTful APIs} \\
+    \customFormat{Cloud Platforms}{AWS (EC2, S3, SES), GCP, Firebase} & \customFormat{DevOps}{Docker, CI/CD (GitHub Actions)} \\
+    \customFormat{Testing}{Jest, Mocha, pytest} & \customFormat{Version Control}{Git, GitHub} \\
+\end{tabular}
+
+% Kubernetes
+% , GraphQL
+\section{Programming Skills}
+ 
+
+\begin{tabular}{ll}
+    \customFormat{Languages}{JavaScript, TypeScript, HTML, CSS, Python} & \customFormat{Frameworks}{React.js, Next.js, Express.js} \\
+    \customFormat{UI Libraries}{Tailwind CSS, Material-UI, Framer Motion, GSAP} & \customFormat{State Management}{Redux, Context API} \\
+    \customFormat{Deployment}{Docker, AWS, GCP} & \customFormat{Version Control}{Git, GitHub} \\
+    \customFormat{Testing}{Jest, React Testing Library, Selenium, Cypress} & \customFormat{UI/UX}{Figma} \\
+\end{tabular}
+\section{Programming Skills}
+\begin{tabular}{ll}
+    \customFormat{Languages}{JavaScript, TypeScript, Python, Java} & \customFormat{Frameworks}{React.js, Next.js, Express.js, Flask} \\
+    \customFormat{UI Libraries}{Tailwind CSS, Material-UI, GSAP} & \customFormat{Database}{MySQL, MongoDB, Firestore, Realtime} \\
+    \customFormat{Deployment}{Docker, AWS, GCP, Github Actions} & \customFormat{Version Control}{Git, GitHub} \\
+    \customFormat{Testing}{Jest, React Testing Library, Selenium, Cypress} & \customFormat{UI/UX}{Figma} \\
+\customFormat{API Development}{RESTful APIs, JWT, HttpOnly} &
+    \customFormat{Mobile}{Flutter}\\
+\end{tabular}
+\section{Programming Skills}
+\begin{tabular}{ll}
+\customFormat{Languages}{C/C++, Java, Kotlin, Python, JavaScript} & \customFormat{Embedded Systems}{Arduino} \\
+\customFormat{Hardware}{HC-05 Bluetooth Module, LCD Displays} & \customFormat{Tools}{Git, GitHub, Linux} \\
+\customFormat{Mobile Development}{Kotlin (Android), Flutter (Android/iOS)} & \customFormat{Database}{MySQL, MongoDB, Firestore} \\
+\customFormat{Deployment}{Docker, AWS, GCP, Github Actions} & \customFormat{Web Development}{React.js, Next.js, Express.js} \\
+\end{tabular}
+\section{Programming Skills}
+\begin{tabular}{ll}
+    \customFormat{Languages}{JavaScript, TypeScript, Python, Java} & \customFormat{Frameworks}{React.js, Next.js, Express.js, Flutter} \\
+    \customFormat{UI Libraries}{Tailwind CSS, Material-UI, GSAP} & \customFormat{Database}{MySQL, MongoDB, Firestore, Realtime} \\
+    \customFormat{Deployment}{Docker, AWS, GCP, Github Actions} & \customFormat{Version Control}{Git, GitHub} \\
+    \customFormat{Testing}{Jest, React Testing Library, Selenium, Cypress} & \customFormat{UI/UX}{Figma} \\
+\end{tabular} 
+% \section{Experience}
+  \resumeSubHeadingListStart 
+    \resumeSubheading
+{Global Network and Supply Management}{Mumbai, India}
+{Software Engineer Intern}{May 2022 -- July 2022}{| \textit{Flutter, Firebase}}
+\resumeItemListStart
+\resumeItem{Social Sign-In}{Implemented social sign-in functionality in their mobile application, Absorb, making it easier for users to log in by leveraging various social media platforms for authentication.}
+\resumeItem{Deep Linking}{Implemented deep linking using \textbf{Firebase} to generate universal links, enabling the application to open specific pages on the website, Android, and iOS platforms.}
+\resumeItemListEnd
+        \resumeSubheading
+      {Global Network and Supply Management}{Mumbai, India}
+      {Software Engineering Intern}{May 2022 -- July 2022}{| \textit{Flutter, Firebase}}
+      \resumeItemListStart
+        \resumeItem{Authentication Flow}
+        {Implemented a seamless \textbf{social sign-in functionality} using \textbf{Flutter} and \textbf{Firebase} Authentication, improving user onboarding experience}
+        \resumeItem{Deep Linking}
+        {\textbf{Collaborated with the back-end team} to develop and integrate a \textbf{deep linking system} using Firebase Dynamic Links, enabling direct access to specific app content from external sources}
+      \resumeItemListEnd
+        \resumeSubheading
+      {Global Network and Supply Management}{Mumbai, India}
+      {Front-end Engineer Intern}{May 2022 -- July 2022}{| \textit{Flutter, Firebase}}
+      \resumeItemListStart
+        \resumeItem{Authentication Flow}
+        {Implemented a seamless \textbf{social sign-in functionality} using \textbf{Flutter} and \textbf{Firebase} Authentication, improving user onboarding experience}
+        \resumeItem{Deep Linking}
+        {\textbf{Collaborated with the back-end team} to develop and integrate a \textbf{deep linking system} using Firebase Dynamic Links, enabling direct access to specific app content from external sources}
+      \resumeItemListEnd
+    \resumeSubheading
+  {Novizon Technologies}{Remote}
+  {Full Stack Developer}{Feb 2024 -- Present}{| \textit{Express.js, Next.js, MySQL, Prisma, Redis, AWS, GitHub Actions}}
+  \resumeItemListStart
+    \resumeItem{Full Stack Development}
+    {Architected and implemented a comprehensive Learning Management System for dyslexic students, developing both \textbf{robust backend} and \textbf{accessible frontend interfaces}}
+    \resumeItem{Backend Development}
+    {Engineered a \textbf{RESTful API} using \textbf{Express.js} following \textbf{MVC principles}, integrated with \textbf{MySQL} for persistent storage and \textbf{Redis} for caching. Implemented \textbf{analytics tracking} to store user engagement data (e.g., time spent viewing lectures)}
+    \resumeItem{Security and Authentication}
+    {Designed and implemented a \textbf{privilege-based access system} using \textbf{JWT tokens} and \textbf{HttpOnly cookies}, ensuring secure and role-specific access to system features}
+    \resumeItem{Frontend Development}
+    {Developed responsive and accessible user interfaces using \textbf{Next.js} and \textbf{React.js}, implementing \textbf{Tailwind CSS} and \textbf{Material-UI} for styling, and creating skeleton loading components for enhanced UX}
+    \resumeItem{Cloud Infrastructure}
+    {Leveraged \textbf{AWS services} (EC2, S3, CloudFront, SES) to enhance system capabilities, optimizing for scalability and cost-effectiveness}
+    \resumeItem{CI/CD and Testing}
+    {Implemented a \textbf{comprehensive CI/CD pipeline} using \textbf{GitHub Actions} and \textbf{AWS EC2}, coupled with thorough testing strategies:
+    \begin{itemize}
+      \item Backend: Unit and integration tests using \textbf{Jest}
+      \item Frontend: \textbf{Jest} for component and utility testing, \textbf{Cypress} for end-to-end testing of critical user flows
+    \end{itemize}}
+  \resumeItemListEnd 
+    \resumeSubheading
+  {Novizon Technologies}{Remote}
+  {Software Engineer}{September 2023 -- February 2024}{| \textit{Express.js, MySQL, Redis, AWS, GitHub Actions}}
+  \resumeItemListStart
+    \resumeItem{RESTful API Development}
+    {Architected and implemented a \textbf{robust RESTful API} using \textbf{Express.js} for a Learning Management System tailored for dyslexic students, focusing on \textbf{scalability} and \textbf{performance optimization}}
+    \resumeItem{Database Architecture}
+    {Designed and implemented a \textbf{high-performance database system} using \textbf{MySQL} for persistent storage and \textbf{Redis} for caching, significantly improving query response times}
+    \resumeItem{Cloud Infrastructure}
+    {Leveraged \textbf{AWS services} (EC2, S3, CloudFront, SES) to enhance system capabilities, optimizing for cost-effectiveness and scalability}
+    \resumeItem{CI/CD Pipeline}
+    {Engineered and managed a \textbf{CI/CD pipeline} using \textbf{GitHub Actions} and \textbf{AWS EC2}, automating the deployment process and ensuring consistent, error-free releases}
+  \resumeItemListEnd
+    
+\resumeSubheading
+  {Novizon Technologies}{Remote}
+  {Full Stack Developer}{Feb 2024 -- Present}{| \textit{Express.js, React.js, MySQL, Redis, AWS, GitHub Actions}}
+  \resumeItemListStart
+    \resumeItem{Full Stack Development}
+    {Architected and implemented a comprehensive Learning Management System for dyslexic students, developing both \textbf{robust backend services} and \textbf{accessible frontend interfaces}}
+    \resumeItem{Backend Development}
+    {Engineered a \textbf{scalable RESTful API} using \textbf{Express.js} following \textbf{MVC} principles, integrated with \textbf{MySQL} for persistent storage and \textbf{Redis} for caching, optimizing query performance}
+    \resumeItem{Frontend Development}
+    {Developed responsive and accessible user interfaces using \textbf{Next.js}, \textbf{React.js}, \textbf{Tailwind CSS}, and \textbf{Material-UI}, implementing skeleton loading for enhanced UX}
+    \resumeItem{Cloud Infrastructure}
+    {Leveraged \textbf{AWS services} (EC2, S3, CloudFront, SES) to enhance system capabilities, optimizing cost-effectiveness}
+    \resumeItem{CI/CD and Testing}
+    {Implemented a \textbf{comprehensive CI/CD pipeline} using \textbf{GitHub Actions} and \textbf{AWS EC2}, coupled with thorough testing strategies:
+    \begin{itemize}
+      \item Backend: Unit and integration tests using \textbf{Jest}
+      \item Frontend: \textbf{Jest} for component and utility testing, \textbf{Cypress} for end-to-end testing of critical user flows
+    \end{itemize}}
+  \resumeItemListEnd
+ 
+        \resumeSubheading
+    {Tradebook Consultancy Services Private Limited}{Chembur, India}
+    {Software Engineering Intern}{Jan 2023 -- May 2023}{| \textit{Flutter}}
+    \resumeItemListStart
+    \resumeItem
+      {Mobile App Development}
+      {Led front-end development for TradeBook's cross-platform mobile application using \textbf{Flutter} and implemented \textbf{responsive UI} components and \textbf{complex animations} to enhance user experience}
+    \resumeItem
+      {UI/UX}
+      {Revamped the user on-boarding screens to make the process \textbf{30\% faster} and \textbf{collaborated closely} with designers to \textbf{accurately translate Figma designs} into pixel-perfect, responsive interfaces} 
+    \resumeItemListEnd
+        \resumeSubheading
+    {Tradebook Consultancy Services Private Limited}{Chembur, India}
+    {Front-end Developer Intern}{Jan 2023 -- May 2023}{| \textit{Flutter}}
+    \resumeItemListStart
+    \resumeItem
+      {Mobile App Development}
+      {Led front-end development for TradeBook's cross-platform mobile application using \textbf{Flutter} and implemented \textbf{responsive UI} components and \textbf{complex animations} to enhance user experience}
+    \resumeItem
+      {UI/UX}
+      {Revamped the user on-boarding screens to make the process \textbf{30\% faster} and \textbf{collaborated closely} with designers to \textbf{accurately translate Figma designs} into pixel-perfect, responsive interfaces}
+    % \resumeItem
+    %   {UI/UX Implementation}
+    %   {Collaborated closely with designers to accurately translate Figma designs into pixel-perfect, responsive interfaces, ensuring consistency across iOS and Android platforms.}
+    \resumeItemListEnd
+    \resumeSubheading
+{Tradebook Consultancy Services Private Limited}{Chembur, India}
+{Software Engineer Intern}{Jan 2023 -- May 2023}{| \textit{Flutter}}
+\resumeItemListStart
+\resumeItem{Mobile App Development}{Contributed to TradeBook's Android and iOS mobile application development. Implemented \textbf{advanced animations}, improved \textbf{UI/UX}, and incorporated \textbf{Figma designs}.}
+\resumeItem{In-App Purchase (iOS)}{Implemented in-app purchases in their iOS application.}
+\resumeItem{Link to Application}{\href{https://play.google.com/store/apps/details?id=com.we3.tradebook.app&pcampaignid=web_share}{\underline{Android}} | \href{https://apps.apple.com/in/app/tradebook-one-stop-solution/id1659276893}{\underline{iOS}}}
+\resumeItemListEnd 
+  \resumeSubHeadingListEnd
+% \section{Projects}
+    \resumeSubHeadingListStart  
+        \resumeSubheadings
+{Bluetooth-Connected Physical Timer \websitelink{https://drive.google.com/file/d/1-k8AyuTbhvV_CfxSlS4qfFLE9OZ6nTNN/view?usp=sharing}}{Jul 2022}
+{}{}{| \textit{C/C++, Arduino, Android, Kotlin}}
+\resumeItemListStart
+\item Designed and implemented a \textbf{Bluetooth-enabled physical timer} using \textbf{Arduino}, showcasing proficiency in \textbf{low-level C/C++ programming} and embedded systems development
+\item Developed \textbf{firmware} for Arduino to manage timer functionality, LED display, and Bluetooth communication, optimizing for \textbf{power efficiency} and \textbf{real-time responsiveness}
+\item Implemented \textbf{Bluetooth Low Energy (BLE) protocol} for seamless communication between the physical timer and mobile devices, demonstrating expertise in wireless connectivity standards
+\item Created a companion \textbf{Android mobile application} using \textbf{Kotlin} and \textbf{Android SDK}, featuring a user-friendly interface for remote timer control and synchronization
+\item Implemented \textbf{robust error handling} and \textbf{data validation} to maintain system stability and prevent data corruption during Bluetooth communication
+\item Optimized \textbf{memory usage} and \textbf{processing efficiency} on the Arduino platform, working within the constraints of limited hardware resources
+\resumeItemListEnd
+        \resumeSubheadings
+    {Dyslearnzia \websitelink{https://shorturl.at/KRE7H}}{Oct 2023 -- Jan 2024}
+    {}{}{| \textit{Express.js, MySQL, Redis, AWS, GitHub Actions}}
+    % \textit{Express.js, MySQL, Redis, AWS (EC2, S3, CloudFront, SES), GitHub Actions}
+    \resumeItemListStart
+    \item Architected and developed a \textbf{RESTful API server} using \textbf{Express.js} for a Learning Management System tailored for dyslexic students, focusing on \textbf{scalability} and \textbf{performance optimization}.
+    \item Designed and implemented a \textbf{robust database architecture} using \textbf{MySQL} for persistent storage and \textbf{Redis} for caching, significantly improving query response times.
+    \item Leveraged \textbf{AWS services} to enhance system capabilities and reduce costs:
+      \begin{itemize}
+        \item Utilized \textbf{EC2} for scalable compute resources, \textbf{S3} for efficient file storage, \textbf{CloudFront} for content delivery, and \textbf{SES} for reliable email notifications.
+      \end{itemize}
+    \item Engineered and managed a \textbf{CI/CD pipeline} using \textbf{GitHub Actions} and \textbf{AWS EC2}, automating the deployment process and ensuring consistent, error-free releases.
+    \item Implemented \textbf{comprehensive backend testing}:
+      \begin{itemize}
+        \item Developed \textbf{unit tests} for API endpoints, database interactions, and utility functions using \textbf{Mocha and Chai}.
+        \item Created \textbf{integration tests} to verify the seamless operation of various backend components and third-party service integrations.
+      \end{itemize}
+    \resumeItemListEnd
+        
+
+        \resumeSubheadings
+        {Dyslearnzia \websitelink{https://shorturl.at/KRE7H}}{Oct 2023 -- Jan 2024}
+        {}{}{| \textit{Next.js, React.js, Tailwind CSS, Material-UI}}
+        \resumeItemListStart
+        \item Spearheaded the front-end development of a Learning Management System for dyslexic students, focusing on \textbf{accessibility} and \textbf{user-friendly} interfaces.
+        \item Built \textbf{skeleton loading components} and implemented \textbf{responsive designs} using \textbf{Next.js, Tailwind CSS,} and \textbf{Material-UI}, ensuring a seamless experience across devices.
+        \item Conducted comprehensive testing using \textbf{Jest for unit tests} and \textbf{Cypress for end-to-end testing}:
+          \begin{itemize}
+            \item Jest: \textbf{Tested React components}, custom hooks, and utility functions for proper rendering and behavior.
+            \item Cypress: Implemented \textbf{end-to-end tests for critical user flows}, including user authentication, course navigation, and interactive learning modules.
+          \end{itemize}
+        \resumeItemListEnd
+        \resumeSubheadings
+{Dyslearnzia}{Oct 2023 -- Present}
+{}{}{| \textit{Next.js, React.js, Express.js, MySQL, AWS}}
+\resumeItemListStart
+\item Developed a Learning Management System for dyslexic students as a freelance project.
+\item Utilized EC2, S3, SES of AWS for deployment, storage and sending mails respectively.
+\item Integrated Daily.co for video conferencing for instructors to take onine classes.
+\item \href{https://www.figma.com/proto/PuKx8clKWktgN4zF7E2Y7f/Untitled?type=design&node-id=1-2&t=TLtNjbLPKdiKb03F-8&scaling=min-zoom&page-id=0%3A1&disable-default-keyboard-nav=1&hotspot-hints=0&hide-ui=1}{\underline{Screenshots}}
+\resumeItemListEnd
+        \resumeSubheadings
+    {InShorts API Server \websitelink{https://inshorts-api-ugdzgasx3a-uc.a.run.app/v1/ui/} \space \githublink{https://github.com/DeveloperDowny/inshorts-api-wi}}{Jul 2024}
+    {}{}{| \textit{Python, Flask, Swagger, Docker, Google Cloud Run, PostgreSQL}}
+    % OpenAPI
+    \resumeItemListStart
+    \item Developed a \textbf{RESTful API server} for InShorts using a \textbf{spec-first approach} with \textbf{Swagger} and \textbf{OpenAPI} standards, focusing on robust \textbf{backend architecture} and \textbf{scalability}.
+    \item Implemented \textbf{secure authentication} using \textbf{JWT tokens} and integrated with \textbf{PostgreSQL} database for efficient data management and retrieval.
+    \item Designed and implemented \textbf{complex database queries} and \textbf{data models} to support various API endpoints, including news feed aggregation and user-specific content delivery.
+    \item Leveraged \textbf{Docker} for containerization and deployed the application on \textbf{Google Cloud Run}, ensuring \textbf{high availability} and \textbf{easy scalability}.
+    \item Implemented \textbf{comprehensive API documentation} using \textbf{Swagger UI}, facilitating easy integration for frontend developers and third-party consumers.
+    \item Conducted thorough \textbf{backend testing}:
+      \begin{itemize}
+        \item Utilized \textbf{pytest} for unit testing of API endpoints, database interactions, and utility functions.
+        \item Implemented \textbf{integration tests} to ensure seamless communication between different components of the backend system.
+      \end{itemize}
+    \resumeItemListEnd
+        \resumeSubheadings
+{InShorts API Server \websitelink{https://inshorts-api-ugdzgasx3a-uc.a.run.app/v1/ui/} \space \githublink{https://github.com/DeveloperDowny/inshorts-api-wi}}{Jul 2024}
+{}{}{| \textit{Python, Flask, PostgreSQL, Docker, Google Cloud Run}}
+\resumeItemListStart
+\item Developed a \textbf{RESTful API server} using \textbf{Flask} with \textbf{modular design} for readable and testable code
+\item Implemented \textbf{user authentication and authorization} using \textbf{JWT tokens} and \textbf{API Keys}
+\item Utilized \textbf{Docker} for containerization and deployed on \textbf{Google Cloud Run}
+\item Conducted thorough \textbf{backend testing}, including unit tests and integration tests, using \textbf{pytest} to ensure code quality and reliability.
+\item Created \textbf{comprehensive API documentation} using \textbf{Swagger UI}, providing \textbf{example requests}, \textbf{example responses}, and an interactive \textbf{"Try it out"} feature for each endpoint
+\resumeItemListEnd
+        \resumeSubheadings
+{That's A 10 \websitelink{https://ta10.vercel.app}}
+{Oct 2023 -- Jan 2024}
+{}{}{| \textit{Next.js, Framer Motion, GSAP, Stripe}}
+\resumeItemListStart
+\item Developed a dynamic, \textbf{responsive website} for a creative design agency using \textbf{Next.js}
+\item Implemented \textbf{complex animations using GSAP} and utilized \textbf{Framer Motion's AnimatePresence} component to create fluid \textbf{inter-route animations}, ensuring smooth transitions between pages and maintaining visual continuity
+\item Integrated \textbf{Stripe} for secure \textbf{payment processing}, ensuring a seamless checkout experience
+\resumeItemListEnd
+        \resumeSubheadings
+{TechRace 2023}{Oct 2022 -- Jan 2023}
+{}{}{| \textit{Flutter, Firebase, Express.js, Python, Google Maps Platform}}
+\resumeItemListStart
+\item Developed a mobile application used by over 300 users simultaneously. It was the official app for an event of Sardar Patel Institute of Technology.
+\item Wrote tests to ensure proper functionality of the application and the server.
+\item Setup and deployed server on DigitalOcean.
+\item Developed automation scripts for event-related tasks like email communication with participants.
+\item \href{https://github.com/DeveloperDowny/techrace_2023}{\underline{GitHub}} | \href{https://github.com/DeveloperDowny/techrace_2023?tab=readme-ov-file#annotated-screenshots-of-the-techrace-2023-app}{\underline{\smash{App Screenshots}}}
+\resumeItemListEnd
+        \resumeSubheadings
+{That's A 10}{Oct 2023 -- Jan 2024}
+{}{}{| \textit{Next.js, Express.js, Stripe}}
+\resumeItemListStart
+\item Developed a website for a creative design agency as a freelance project.
+\item Integrated Stripe for collecting payments.
+\item Implemented complex animations using GSAP.
+\item \href{https://ta10.vercel.app}{\underline{Website Link}}
+\resumeItemListEnd
+        \resumeSubheadings
+{Bluetooth-Connected Physical Timer \websitelink{https://drive.google.com/file/d/1-k8AyuTbhvV_CfxSlS4qfFLE9OZ6nTNN/view?usp=sharing}}{Jul 2022}
+{}{}{| \textit{C/C++, Arduino, Android, Kotlin}}
+\resumeItemListStart
+\item Designed and implemented a \textbf{Bluetooth-enabled physical timer} using \textbf{Arduino}, demonstrating proficiency in \textbf{C/C++ programming} and embedded systems
+\item Integrated an \textbf{LCD screen} to display timer information and developed firmware to manage timer functionality and Bluetooth communication
+\item Created a companion \textbf{Android mobile application} using \textbf{Kotlin} for remote timer control and synchronization
+\item Implemented \textbf{Bluetooth communication} to receive timer duration settings from the mobile app and update the physical timer accordingly
+\resumeItemListEnd
+        \resumeSubheadings
+{TechRace 2023 \githublink{https://shorturl.at/eaIlY}}
+{Oct 2022 -- Jan 2023}
+{}{}{| \textit{Express.js, Firebase, Jest, GitHub Actions, Digital Ocean, Flutter}}
+\resumeItemListStart
+\item Developed and deployed a scalable backend server using \textbf{Express.js} to support a game-oriented mobile app for \textbf{300+ concurrent users}
+\item Implemented \textbf{real-time data synchronization} between the server and client applications using \textbf{Firebase}
+% \item Designed and optimized \textbf{RESTful APIs} to handle location-based features and game logic
+\item Implemented comprehensive \textbf{unit and integration tests} using \textbf{Jest} to ensure server reliability and performance
+\item Set up \textbf{CI/CD pipeline} using \textbf{GitHub Actions} for automated testing and deployment to \textbf{Digital Ocean}
+\item Collaborated with the frontend team to ensure seamless integration between server and client-side components
+\resumeItemListEnd
+        \resumeSubheadings
+{TechRace 2023 \githublink{https://shorturl.at/eaIlY}}
+{Oct 2022 -- Jan 2023}
+{}{}{| \textit{Flutter, Google Maps Platform, Firebase, Express.js}}
+\resumeItemListStart
+\item Led front-end development of a \textbf{game-oriented} mobile app for \textbf{300+ concurrent users}, focusing on \textbf{UI/UX design} and \textbf{performance optimization}.
+\item Integrated \textbf{Google Maps} for real-time location features and implemented \textbf{responsive custom components}.
+\item Ensured \textbf{cross-platform compatibility} and conducted \textbf{thorough front-end testing} on various devices.
+\resumeItemListEnd
+        \resumeSubheadings
+{TechRace 2023 \githublink{https://github.com/DeveloperDowny/techrace_2023} \websitelink{https://github.com/DeveloperDowny/techrace_2023\#annotated-screenshots-of-the-techrace-2023-app}}
+{Oct 2022 -- Jan 2023}
+{}{}{| \textit{Flutter, Google Maps Platform, Firebase}}
+\resumeItemListStart
+\item Collaborated in a 2-person team developing 2 \textbf{Android/iOS apps} for a college event with \textbf{300+ concurrent users}
+\item Built \textbf{complex Flutter widgets using CustomPainter} to build a user interface with a \textbf{game-oriented user experience} and seamlessly integrated \textbf{Bluetooth LE Beacons} for
+ user authentication at designated locations
+\item Implemented \textbf{location-based anti-cheat solutions} and integrated \textbf{Firebase real-time database streams} along with
+ \textbf{Google Cloud Storage}
+\resumeItemListEnd
+        \resumeSubheadings
+{TechRace 2023 \githublink{https://github.com/DeveloperDowny/techrace_2023} \websitelink{https://github.com/DeveloperDowny/techrace_2023\#annotated-screenshots-of-the-techrace-2023-app}}
+{Oct 2022 -- Jan 2023}
+{}{}{| \textit{Flutter, Google Maps Platform, Firebase}}
+\resumeItemListStart
+\item Collaborated in a 2-person team developing 2 \textbf{Android/iOS apps} for a college event with \textbf{300+ concurrent users}
+\item Built \textbf{complex Flutter widgets using CustomPainter} to build a user interface with a \textbf{game-oriented user experience} and seamlessly integrated \textbf{Bluetooth LE Beacons} for
+ user authentication at designated locations
+\item Implemented \textbf{location-based anti-cheat solutions} and integrated \textbf{Firebase real-time database streams} along with
+ \textbf{Google Cloud Storage}
+\resumeItemListEnd
+        \resumeSubheadings
+{TechRace 2023 \githublink{https://github.com/DeveloperDowny/techrace_2023}}
+{Oct 2022 -- Jan 2023}
+{}{}{| \textit{Flutter, Express.js, Firebase, Digital Ocean, Linux}}
+\resumeItemListStart
+\item Led full-stack development of a \textbf{game-oriented mobile app} using \textbf{Flutter} for \textbf{300+ concurrent users}, focusing on \textbf{UI/UX design} and \textbf{performance optimization}
+\item Built, tested and optimized a backend using \textbf{Express.js}, implementing \textbf{RESTful APIs} for game logic
+\item Ensured code quality through \textbf{comprehensive unit and integration tests} using \textbf{Jest}
+\item Set up \textbf{CI/CD pipeline} using \textbf{GitHub Actions} for deployment to \textbf{Linux VM} instance of \textbf{Digital Ocean}
+\item Collaborated effectively in a team environment, ensuring seamless integration between frontend and backend
+\resumeItemListEnd        
+        \resumeSubheadings
+{TechRace 2023 \githublink{https://shorturl.at/eaIlY}}
+{Oct 2022 -- Jan 2023}
+{}{}{| \textit{Flutter, Google Maps Platform, Firebase, Express.js}}
+\resumeItemListStart
+\item Led front-end development of a \textbf{game-oriented} mobile app for \textbf{300+ concurrent users}, focusing on \textbf{UI/UX design} and \textbf{performance optimization}
+\item Integrated \textbf{Google Maps} for real-time location features and implemented \textbf{responsive custom components}
+\item Built server using \textbf{Express.js}, tested using \textbf{Jest} and deployed it using \textbf{GitHub Actions} on \textbf{Digital Ocean}
+% \item Ensured \textbf{cross-platform compatibility} and conducted \textbf{thorough front-end testing} on various devices.
+\resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\end{document}

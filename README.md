@@ -8,3 +8,12 @@ python3 main.py
 ```
 or equivalent command for your system.
 4. The output file `combined_main.tex` will be generated in the `latex_project` folder.
+
+# Prompts
+Use OOPS approach
+
+Use coupling and cohesion principle
+
+Add logging
+
+Add error handling

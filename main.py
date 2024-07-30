@@ -18,26 +18,36 @@ def replace_input(file_path):
         else:
             return f'% Warning: File {input_file_path} not found\n'
 
-    # Replace all \input{...} commands
-    content = re.sub(r'\\input{([^}]+)}', process_input, content)
-
     def process_ifstrequalcase(match):
         cases = match.group(1)
         default_case = match.group(2)
         
-        case_match = re.search(r'{' + re.escape(RESUME_TYPE) + r'}\s*{([^}]+)}', cases)
+        # Match the desired case
+        case_pattern = r'\{' + re.escape(RESUME_TYPE) + r'\}\s*\{([^}]*)\}'
+        case_match = re.search(case_pattern, cases)
         if case_match:
             return re.sub(r'\\input{([^}]+)}', process_input, case_match.group(1))
         else:
             return re.sub(r'\\input{([^}]+)}', process_input, default_case)
 
+    # Replace all \input{...} commands
+    content = re.sub(r'%.*$', '', content, flags=re.MULTILINE)
+    content = re.sub(r'\\input{([^}]+)}', process_input, content)
+
     # Replace \IfStrEqCase{...}{...} with the chosen case or default
-    content = re.sub(r'\\IfStrEqCase{[^}]+}{([^[]+)}\[\s*([^]]+)\s*\]', process_ifstrequalcase, content, flags=re.DOTALL)
+    content = re.sub(
+        r'\\IfStrEqCase{[^}]+}{([^[]+)}\[\s*([^]]+)\s*\]', 
+        process_ifstrequalcase, 
+        content, 
+        flags=re.DOTALL
+    )
+
+    # Remove comments from content before further processing
 
     return content
 
 def main():
-    main_file_path = os.path.join(base_dir, 'main.tex')  # Path to your main LaTeX file
+    main_file_path = os.path.join(base_dir, 'main_processed.tex')  # Path to your main LaTeX file
     combined_content = replace_input(main_file_path)
 
     with open(os.path.join(base_dir, 'combined_main.tex'), 'w') as output_file:
