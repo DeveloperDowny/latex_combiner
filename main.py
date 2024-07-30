@@ -16,14 +16,12 @@ class TexCombiner:
 
         matches = re.findall(pattern, text)
         if matches:
-            print(matches[0])
             inp_list = matches[0].split("<newline>")
             # find index of {fs} and remove left of it
             for i in range(len(inp_list)):
                 if inp_list[i].strip() == "{"+self.RESUME_TYPE+"}":
                     inp_list = inp_list[i+1:]
                     break
-            print(inp_list)
             with open(os.path.join(self.base_dir, "out2.tex"), "w") as file:
                 for inp in inp_list:
                     if "}" in inp and "{" in inp and "input" not in inp:
@@ -45,7 +43,6 @@ class TexCombiner:
         def replace_block_with_file(input_text, file_path):
             # Pattern to match the entire \IfStrEqCase block
             pattern = r'\\IfStrEqCase{(.*)% Default case'
-            print(pattern)
 
             # Read the contents of the specified file
             try:
@@ -67,7 +64,6 @@ class TexCombiner:
             return result
 
         output_text = replace_block_with_file(input_text, file_path)
-        print(output_text)
         with open(os.path.join(self.base_dir, 'main_processed.tex'), 'w') as file:
             file.write(output_text)
 
