@@ -2,12 +2,12 @@ import os
 import re
 
 class TexCombiner:
-    def __init__(self, resume_type='fs', base_dir=None):
+    def __init__(self, resume_type='back', base_dir=None):
         self.RESUME_TYPE = resume_type
         self.base_dir = base_dir or os.path.join(os.path.dirname(os.path.abspath(__file__)), "latex_project")
 
     def preprocess_1(self):
-        pattern = r'\{fs\}(.*)'
+        pattern = r'\{'+self.RESUME_TYPE+r'\}(.*)'
         text = ""
         with open(os.path.join(self.base_dir, "main.tex"), "r") as file:
             text = file.read()
@@ -20,7 +20,7 @@ class TexCombiner:
             inp_list = matches[0].split("<newline>")
             # find index of {fs} and remove left of it
             for i in range(len(inp_list)):
-                if inp_list[i].strip() == "{fs}":
+                if inp_list[i].strip() == "{"+self.RESUME_TYPE+"}":
                     inp_list = inp_list[i+1:]
                     break
             print(inp_list)
