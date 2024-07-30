@@ -3,7 +3,7 @@ import re
 
 # Define the resume type you want to use
 RESUME_TYPE = 'fs'  # Change this to the desired case
-base_dir = os.path.dirname(os.path.abspath(__file__), "latex_project")
+base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "latex_project")
 
 def replace_input(file_path):
     with open(file_path, 'r') as file:
@@ -12,8 +12,7 @@ def replace_input(file_path):
     def process_input(match):
         input_file = match.group(1)
         input_file = input_file.replace("/", os.sep)
-        #os.path.dirname(file_path),
-        input_file_path = os.path.join( input_file + '.tex')
+        input_file_path = os.path.join(base_dir, input_file + '.tex')
         if os.path.exists(input_file_path):
             return replace_input(input_file_path)
         else:
@@ -38,10 +37,10 @@ def replace_input(file_path):
     return content
 
 def main():
-    main_file_path = 'main.tex'  # Path to your main LaTeX file
+    main_file_path = os.path.join(base_dir, 'main.tex')  # Path to your main LaTeX file
     combined_content = replace_input(main_file_path)
 
-    with open('combined_main.tex', 'w') as output_file:
+    with open(os.path.join(base_dir, 'combined_main.tex'), 'w') as output_file:
         output_file.write(combined_content)
 
 if __name__ == '__main__':
